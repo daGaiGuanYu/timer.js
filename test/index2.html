@@ -1,0 +1,12 @@
+<script type="module">
+import Timer from '../index.js'
+
+let timer = new Timer()
+setTimeout(() => timer.pause(), 800)
+setTimeout(() => timer.continue(), 1800)
+setTimeout(() => {
+  timer.stop()
+  console.log(timer.time())
+}, 2000)
+
+</script>
